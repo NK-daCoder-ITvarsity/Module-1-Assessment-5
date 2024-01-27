@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background-gradient: linear-gradient(hsl(0, 0%, 36%), hsl(0, 0%, 14%));
+}
+
+header {
+    background-color: paleturquoise;
+}
+
+main {
+    background-color: #ff0055;
+}
+
+footer {
+    background-color: #00646b;
+}
+
+/*Attempt at mobile*/
+@media (min-width: 300px) {
+
+    .main-background {
+        border: 2px solid red;
+        padding: .5em;
+        background: var(--background-gradient);
+        background-repeat: no-repeat;
+    }
+
+    section {
+        border: 2px solid green;
+    }
+
+    .nav-bar__links {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .nav-bar__button {
+        padding: .5rem;
+    }
+
+    .nav-bar__button .nav-bar__icon {
+        width: 70%;
+        height: 70%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .nav-bar__contents {
+        color: white;
+        text-align: center;
+    }
+    
+}
