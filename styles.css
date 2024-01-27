@@ -6,7 +6,7 @@
 }
 
 :root {
-    --background-gradient: linear-gradient(hsl(0, 0%, 36%), hsl(0, 0%, 14%));
+    --background-gradient: linear-gradient(hsl(0, 0%, 23%), hsl(0, 0%, 11%), hsl(90, 2%, 22%));
     --mobile-searchbar-radius: 2rem;
 }
 
@@ -18,8 +18,6 @@ footer {
 @media (min-width: 300px) and (min-height: 500px){
 
     .main-background {
-        border: 2px solid red;
-        padding: .5em;
         background: var(--background-gradient);
         background-repeat: no-repeat;
         height: 100vh;
@@ -28,8 +26,12 @@ footer {
     }
 
     .mobile-section__nav-bar {
-        border: 2px solid green;
+        background: hsl(0, 0%, 11%);
+        width: auto;
+        height: 100svh;
+        position: sticky;
     }
+
 
     .nav-bar__links {
         display: flex;
@@ -50,11 +52,15 @@ footer {
         margin-left: auto;
     }
 
+    .mobile-section__header {
+        padding: 5rem;
+    }
 
     .mobile-section__text--color--alignment {
         color: hsl(0, 0%, 91%);
         text-align: center;
         font-size: .8rem;
+        padding: .1rem;
     }
     
     .mobile-section__search-bar--container {
@@ -74,7 +80,7 @@ footer {
     }
 
     .mobile-section__search--icon {
-        background-color: hsl(0, 0%, 19%);
+        background-color: hsl(248, 18%, 9%);
         border: 1px solid white;
         border-top-left-radius: .5rem;
         border-bottom-left-radius: .5rem;
@@ -83,24 +89,49 @@ footer {
     }
 
     .mobile-card__container {
-        border: 2px solid green;
         padding: 2rem;
         height: 50vh;
         white-space: nowrap; /* Prevents wrapping of inline-block elements */
         overflow-x: auto;
     }
     
-    .mobile-card__character--card {
+    .mobile-card {
         display: inline-block;
         border-radius: 2rem;
-        background-color: hsl(0, 5%, 13%);
-        height: 80%;
+        background: linear-gradient(to top, hsl(0, 0%, 9%), hsla(0, 3%, 27%, 0.822));
+        height: 100%;
         /* Adjust the width of each card */
         width: 65%; 
         box-sizing: border-box;
-        margin-top: 15%;
+        margin-top: 5%;
         /* Adjust the margin between cards */
         margin-right: 1rem;
+        overflow-y: none;
+    }
+
+    .mobile-card__image {
+        display: block;
+        position: relative;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+
+    .main-heading {
+        padding: 1.6rem;
+        color: rgba(230, 230, 230, 0.87);
+        text-align: center;
+    }
+
+    .main-heading .main-heading_text{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+    }
+
+    .footer {
+        display: none;
     }
     
 }
