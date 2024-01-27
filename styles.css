@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: none;
 }
 
 :root {
@@ -14,13 +15,16 @@ footer {
 }
 
 /*Attempt at mobile*/
-@media (min-width: 300px) {
+@media (min-width: 300px) and (min-height: 500px){
 
     .main-background {
         border: 2px solid red;
         padding: .5em;
         background: var(--background-gradient);
         background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
 
     .mobile-section__nav-bar {
@@ -54,7 +58,7 @@ footer {
     }
     
     .mobile-section__search-bar--container {
-        padding: 0.5rem;
+        padding: .9rem;
         display: flex;
         justify-content: center;
     }
@@ -69,10 +73,6 @@ footer {
         padding: 1rem;
     }
 
-    .mobile-section__border {
-        border: 2px solid green;
-    }
-
     .mobile-section__search--icon {
         background-color: hsl(0, 0%, 19%);
         border: 1px solid white;
@@ -81,4 +81,26 @@ footer {
         border: none;
         padding: .2rem;
     }
+
+    .mobile-card__container {
+        border: 2px solid green;
+        padding: 2rem;
+        height: 50vh;
+        white-space: nowrap; /* Prevents wrapping of inline-block elements */
+        overflow-x: auto;
+    }
+    
+    .mobile-card__character--card {
+        display: inline-block;
+        border-radius: 2rem;
+        background-color: hsl(0, 5%, 13%);
+        height: 80%;
+        /* Adjust the width of each card */
+        width: 65%; 
+        box-sizing: border-box;
+        margin-top: 15%;
+        /* Adjust the margin between cards */
+        margin-right: 1rem;
+    }
+    
 }
