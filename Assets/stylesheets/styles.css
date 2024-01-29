@@ -6,7 +6,7 @@
 }
 
 :root {
-    --background-gradient: linear-gradient(hsl(0, 0%, 23%), hsl(0, 0%, 11%), hsl(90, 2%, 22%));
+    --background-gradient: radial-gradient(hsl(0, 0%, 14%), hsl(0, 0%, 11%));
     --mobile-searchbar-radius: 2rem;
 }
 
@@ -17,9 +17,12 @@ footer {
 /*Attempt at mobile*/
 @media (min-width: 300px) and (min-height: 500px){
 
-    .main-background {
+    html {
         background: var(--background-gradient);
         background-repeat: no-repeat;
+    }
+
+    .main-background {
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -27,9 +30,12 @@ footer {
 
     .mobile-section__nav-bar {
         background: hsl(0, 0%, 11%);
-        width: auto;
-        height: 100svh;
-        position: sticky;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        overflow: none;
+        z-index: 1;
     }
 
 
@@ -38,22 +44,25 @@ footer {
         justify-content: space-between;
         text-decoration: none;
         list-style-type: none;
+        z-index: 1;
     }
 
     .nav-bar__button {
-        padding: .5rem;
+        padding: .4rem;
+        z-index: 1;
     }
 
     .nav-bar__button .nav-bar__icon {
-        width: 70%;
-        height: 70%;
+        width: 40%;
+        height: 40%;
         display: block;
         margin-right: auto;
         margin-left: auto;
+        z-index: 1;
     }
 
-    .mobile-section__header {
-        padding: 5rem;
+    .mobile-section__header .mobile-section_header-text{
+        padding: 1rem;
     }
 
     .mobile-section__text--color--alignment {
@@ -64,7 +73,7 @@ footer {
     }
     
     .mobile-section__search-bar--container {
-        padding: .9rem;
+        padding: .5rem;
         display: flex;
         justify-content: center;
     }
