@@ -6,58 +6,79 @@
 
 @media (min-width: 300px) and (min-height: 500px) {
 
-    .character {
-        height: auto;
-        width: auto;  
+    .main-background {
+        background-image: url("../Avenger-charcter-info/Avengers/iron-man-tony.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-position-y: 70px;
+        filter: contrast(1.5);
     }
 
-    .character img{
-        width: 100%;
+    .header__charcter--name-font-bold {
+        font-family: Verdana, Helvetica, sans-serif;
+    }
+
+    .header {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        background-color: hsl(0, 5%, 12%);
+    }
+
+    .header .header__character-logo {
         height: 100%;
-        object-fit: cover;
+        width: 20%;
     }
 
-    .charcter-name {
-        padding: 2rem;
-        text-align: center;
-        font-family: Helvetica, sans-serif;
-        color: hsla(0, 0%, 92%, 0.774);
-        
+    .header .header__character--name {
+        display: inline-block;
+        margin-bottom: auto;
+        margin-top: auto;
+        color: hsl(0, 0%, 100%);
     }
 
-    .character-biography {
-        background: rgba(77, 77, 77, 0.329);
+    .biography-container {
+        background: rgba(255, 255, 255, 0.685);
         position: absolute;
-        bottom: 10rem;
+        bottom: 5rem;
+        left: 10%;
+        right: 10%;
         height: 58%;
-        width: auto;
+        width: 80%;
+        
         /*Glossy effect*/
-        background: rgba(255,255,255,0.3);
+        background: rgba(255, 255, 255, 0.445);
         -webkit-backdrop-filter: blur(6px);
         backdrop-filter: blur(3px);
         border: 1px solid rgba(255,255,255,0.15);
-        border-top-right-radius: 1rem;
-        border-top-left-radius: 1rem;
+        border-top-right-radius: .8rem;
+        border-top-left-radius: .8rem;
         border-bottom-right-radius: .5rem;
         border-bottom-left-radius: .5rem;
     }
 
     .character-biography__heading-text {
+        padding: .5rem;
         text-align: center;
         /*Glossy effect*/
-        background: rgba(241, 241, 241, 0.438);
+        background: rgba(241, 241, 241, 0.521);
         -webkit-backdrop-filter: blur(6px);
         backdrop-filter: blur(3px);
         border: 1px solid rgba(255,255,255,0.15);
 
         width: 100%;
-        border-top-right-radius: 1rem;
-        border-top-left-radius: 1rem;
+        border-top-right-radius: .8rem;
+        border-top-left-radius: .8rem;
     }
 
-    .character-biography__text {
-        padding: .5rem;
-        font-family: sans-serif;
+    .character-biography__text--paragraph {
+        padding: .6rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: .9rem;
+        letter-spacing: .05rem;
+        filter: contrast(1.8);
+        
     }
     
 }
