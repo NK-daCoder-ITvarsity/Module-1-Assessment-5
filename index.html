@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super hero App</title>
-    <link rel="stylesheet" href="./Assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="./Assets/stylesheets/desktop-mobile-styles.css"/>
+
 </head>
 <body class="main-background">
     <header>
@@ -16,19 +17,19 @@
             <nav class="nav-bar">
                 <ul class="nav-bar__links">
                     <li class="nav-bar__button">
-                        <a href="#" style="text-decoration: none;">
+                        <a href="./index.html" style="text-decoration: none;">
                             <img src="./Assets/icons/icons8-home.svg" class="nav-bar__icon">
                             <p class="mobile-section__text--color--alignment">Home</p>
                         </a>
                     </li>
                     <li class="nav-bar__button">
-                        <a href="#" style="text-decoration: none;">
+                        <a href="./contact.html" style="text-decoration: none;">
                             <img src="./Assets/icons/contact.svg" class="nav-bar__icon">
                             <p class="mobile-section__text--color--alignment">Contact</p>
                         </a>
                     </li>
                     <li class="nav-bar__button">
-                        <a href="#" style="text-decoration: none;">
+                        <a href="./about.html" style="text-decoration: none;">
                             <img src="./Assets/icons/icons8-about.svg" class="nav-bar__icon">
                             <p class="mobile-section__text--color--alignment">About</p>
                         </a>
@@ -43,8 +44,22 @@
         <section class="main-heading">
             <h1 class="main-heading_text">Choose A Hero</h1>
         </section>
-        
+
+        <!--for desktop version-->
+        <a href="./Assets/webpages/agent-nikki.html">
+            <section>
+                <img src="./Assets/Potraits/nikki-sheild-agent.png" alt="A potrait mage of samuel el Jackson from the movie avengers" class="agent">
+            </section>
+        </a>
+
+        <!--for mobile-->
         <section class="mobile-card__container">
+                <a href="./Assets/webpages/agent-nikki.html">
+                    <section class="mobile-card desktop-card-agent">
+                        <img src="./Assets/Potraits/nikki-sheild-agent.png" alt="nick-furry-sheild-agent-Potrait" class="mobile-card__image">
+                    </section>
+                </a>
+
                 <a href="./Assets/webpages/iron-man.html">
                     <section class="mobile-card">
                         <img src="./Assets/Potraits/Iron-man.png" alt="Iron-Man-Potrait" class="mobile-card__image">
@@ -81,35 +96,11 @@
                     </section>
                 </a>
         </section>
-
-
+        
+        
     </main>
 
     <footer class="footer">footer</footer>
 
-    <section class="mobile-section__nav-bar">
-        <nav class="nav-bar">
-            <ul class="nav-bar__links">
-                <li class="nav-bar__button">
-                    <a href="#" style="text-decoration: none;">
-                        <img src="./Assets/icons/icons8-home.svg" class="nav-bar__icon">
-                        <p class="mobile-section__text--color--alignment">Home</p>
-                    </a>
-                </li>
-                <li class="nav-bar__button">
-                    <a href="#" style="text-decoration: none;">
-                        <img src="./Assets/icons/contact.svg" class="nav-bar__icon">
-                        <p class="mobile-section__text--color--alignment">Contact</p>
-                    </a>
-                </li>
-                <li class="nav-bar__button">
-                    <a href="#" style="text-decoration: none;">
-                        <img src="./Assets/icons/icons8-about.svg" class="nav-bar__icon">
-                        <p class="mobile-section__text--color--alignment">About</p>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </section>
 </body>
 </html>
