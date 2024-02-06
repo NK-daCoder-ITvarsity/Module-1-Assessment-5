@@ -32,7 +32,7 @@ Welcome to the Superhero App documentation! This app allows users to explore inf
 
 - [x] Is it responsive for all mobile and desktop users.
 - [x] For mobile users is the website only made potrait mode.
-- [] For mobile users is the website made for landscape purposes as well.
+- [ ] For mobile users is the website made for landscape purposes as well.
 - [x] Images are responsive and can adapt to screen sizes.
 - [x] Users can explore related superheroes and team affiliations.
 - [x] Each superhero has a detailed profile page with information such as powers, biography, appearance, and more
