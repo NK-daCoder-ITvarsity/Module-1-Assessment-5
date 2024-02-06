@@ -30,12 +30,12 @@ Welcome to the Superhero App documentation! This app allows users to explore inf
 
 ## Features
 
-[x] Is it responsive for all mobile and desktop users.
-[x] For mobile users is the website only made potrait mode.
-[] For mobile users is the website made for landscape purposes as well.
-[x] Images are responsive and can adapt to screen sizes.
-[x] Users can explore related superheroes and team affiliations.
-[x] Each superhero has a detailed profile page with information such as powers, biography, appearance, and more
+-[x] Is it responsive for all mobile and desktop users.
+-[x] For mobile users is the website only made potrait mode.
+-[] For mobile users is the website made for landscape purposes as well.
+-[x] Images are responsive and can adapt to screen sizes.
+-[x] Users can explore related superheroes and team affiliations.
+-[x] Each superhero has a detailed profile page with information such as powers, biography, appearance, and more
 
 ## Technologies
 
@@ -44,7 +44,7 @@ Welcome to the Superhero App documentation! This app allows users to explore inf
 
 ## Contribution
 
-I welcome any contributions to the Superhero App! To contribute, follow these steps:
+We welcome any contributions to the Superhero App! To contribute, follow these steps:
 
 1. Fork the repository.
 1. Create a new branch ``` git checkout -b feature-new-feature ```
@@ -55,8 +55,6 @@ I welcome any contributions to the Superhero App! To contribute, follow these st
 ## Liscensing
 
 The App was done for educational purposes
-
-
 
 ## Extra Information
 
